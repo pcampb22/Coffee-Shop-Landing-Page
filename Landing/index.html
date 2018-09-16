@@ -9,33 +9,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header id="header" class="container"> 
-        <nav id="nav-bar">
+    <!-- Navigation -->
+     <nav id="nav-bar">
+            <div id="title-icon-wrap">
+                <div id="icon-wrap">
+                    <img id="header-img" src="./img/tea.png" alt="logo">
+                </div>
+            </div>
+            <div id="nav-container">
             <ul id="link">
                 <li class="nav-link">
-                    <a href="#header">Home</a>
+                 <a href="#header">Home</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#about">About</a>
+                 <a href="#about">About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#pics">Pics</a>
+                 <a href="#pics">Pics</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#contact">Contact Us</a>
+                 <a href="#contact">Contact Us</a>
                 </li>
             </ul>
-            <div id="icon-wrap">
-                <img id="header-img" src="./img/tea.png" alt="logo">
-            </div>
+            
             <ul id="social">
-                <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+             <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+             <li><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
-        </nav>
-
+            </div>
+            <a href="javascript:void(0);" id="toggle" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav> 
+        <!-- End of Navigation -->
         <div class="fullscreen-video-wrap">
             <video src="vid/Coffee2.mp4" muted autoplay="true" loop="true"></video>
         </div>
@@ -43,29 +53,32 @@
         <div class="video-overlay"></div>
          <div class="overlay-content">
             <h1>Top Shop Café</h1>
-            <h2>The secret lies within the bean.</h2>
-            <h3>Coffee perfection since 1927.</h3>
-            <div id="search">
-                <input type="search" name="searchBar" id="searchBar" />
-                <button>Search</button>
-            </div>
+            <h2>Start Your Day with a Black Coffee.</h2>
+            <h3>The secret lies within the bean.</h3>
+                <button>Buy Now</button>
         </div> 
-    </header>
-   <!-- <main>
-        <section id="about" class="section section-a">
-            <div class="container">
-                <h1>About Top Shop Cofee</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, 
-                    voluptatibus voluptate beatae natus animi odit fugiat? Eos quam 
-                    officiis harum nostrum, ipsam eum similique possimus sit nobis 
-                    necessitatibus eligendi. Harum sed error mollitia architecto nesciunt. 
-                    Dolorum nobis odio voluptatibus! Nulla ab quidem iure placeat? 
-                    Alias nesciunt doloribus similique totam libero.</p>
+    </header> <!-- End of Header -->
+    <!-- Main -->
+    <main>
+        <!-- Live Coffee Section-->
+        <section id="live-Coffee-Section" class="section section-a">
+            <div id="liveCoffee-video-wrap">
+                <iframe src="https://www.youtube.com/embed/kUeQNiXk0pQ" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>    
+            <div class="liveCoffee">
+                    <p>Live Coffee Making Process</p>
+                    <h1>We Telecast our Coffee Making Live.</h1>
+                    <h2>We are here to listen to you deliver exellence.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, 
+                       voluptatibus voluptate beatae natus animi odit fugiat? </p>
             </div>
         </section>
+        <!--
         <section id="" class="section section-b">
             <div class="container">
-                <h1>About Top Shop Cofee</h1>
+                <h1>What kind of Coffee we serve for you</h1>
+                <h2>Who are extremely in love with ecofriendly system</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
                     voluptatibus voluptate beatae natus animi odit fugiat? Eos quam
                     officiis harum nostrum, ipsam eum similique possimus sit nobis
@@ -95,12 +108,12 @@
                     Dolorum nobis odio voluptatibus! Nulla ab quidem iure placeat?
                     Alias nesciunt doloribus similique totam libero.</p>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
 
-    </footer> -->
-
+    </footer> 
+<script src="index.js"></script>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
 </body>
 </html>

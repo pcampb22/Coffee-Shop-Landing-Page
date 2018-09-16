@@ -18,7 +18,6 @@ header{
     height: 100vh;
     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .container{
     max-width: 960px;
     padding-left: 1rem;
@@ -26,8 +25,6 @@ header{
     margin: 0 auto;
     text-align: center;
 } 
-
-
 button{
     background:  rgb(252, 190, 58);
     color: rgb(51, 35, 5);
@@ -38,36 +35,16 @@ button{
     width: 50%;
     padding: 10px 20px;
 }
-
-#search{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-
-#searchBar{
-    border-radius: 15px;
-    font-size: 0.9em;
-    padding: 10px;
-    color: grey;
-    width: 80%;
-}
-
 .overlay-content{
     z-index: 2;
-    margin: auto;
-    
+    text-align: left;
 }
-
 .overlay-content h1{
     color: #fff;
     font-size: 7.43rem;
     font-family: Dense, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 30px;
 }
-
 
 /* === Header Video Background Styles === */
 
@@ -91,56 +68,61 @@ button{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #533c35;
-    opacity: 0.6;
+    background: linear-gradient(#533c35, #000);
+    opacity: 0.4;
     z-index: 1;
 }
 
-
-
- /* === Header Nav Styles === */
-
+/* === Nav Styles === */
 nav{
     z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0;
-    background: #64392d;
+    background: rgb(100, 57, 45);
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-
+}
+#title-icon-wrap::after{
+    content: "Top Shop Café";
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    width: 120px;
+}
+#title-icon-wrap{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#nav-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    align-items: center;
+    margin-right: 15px;
+}
+ul li{
+    padding: 0 10px;
 }
 ul{
-    display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
-    margin: 5px 0;
-
+    display: flex;
 }
-nav li a{
-    color: #fff;
+ul li a{
     text-decoration: none;
-    padding: 0;
+    color: #fff;
     font-family: 'Raleway', sans-serif;
 }
-
-nav li{
-    padding: 10px 15px;
-}
-
-#link{
-    font-size: 0.9rem;
-
-}
+.nav-link{
+    font-size: 0.9rem;}
 
 #social{
     font-size: 1.1rem;
 }
-
+.icon{
+    display: none;
+}
 
 /* ===Nav Logo Style === */
 #icon-wrap{
@@ -151,15 +133,11 @@ nav li{
     justify-content: space-around;
     align-items: center;
     border-radius: 50%;
-    margin: 10px 0;
-   
+    margin: 10px 10px;
 }
-
 #header-img{
     width: 50%;
 }
-
-
 
 
 /* === Main Styles === */
@@ -169,21 +147,99 @@ main{
     height: auto;
 }
 
-section{
-    padding: 20px 0;
+section {
+    padding: 20px 10%;
+}
+.section-a{
+    display: flex;
 }
 
 
 
-/* === Media Queries === */
-/*
+
+
+
+
+/* ====== Media Queries ====== */
+
+/* === Desktop === */
 @media (max-width: 960px)
 {
     .container{
         padding-right: 3rem;
         padding-left: 3rem;
     }
+}
 
+/* === Laptop, Desktop === */
+@media screen and (min-width: 768px) {
+    #nav-container{
+        display: flex !important;
+    }
+}
+
+/* == Tablets, cellphones etc == */
+@media only screen and (max-width: 768px) {
+    .overlay-content{
+        text-align: center;
+        margin: auto;
+    }
+
+    /* === Nav Styles === */
+    .icon{
+        display: block;
+        color: #fff;
+        margin-right: 30px;
+        font-size: 25px;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .icon:hover{
+        color: rgb(252, 190, 58);
+    }
+    nav{
+        flex-direction: column;
+        background: rgba(100, 57, 45, 0.8);
+    }
+
+    #nav-container{
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        margin: 10px;
+        width: 100vw;
+        padding:10px;
+        font-size:1.1rem;
+    }
+
+    .nav-link:hover{
+        background: rgb(252, 190, 58);
+    }
+    
+    #link{
+        flex-direction: column;
+    }
+
+    #social{
+        background: rgb(252, 190, 58);
+        width: 100vw;
+        margin: 0;
+        padding: 10px;
+        justify-content: center;   
+    }
+
+    #social a{
+        color: rgb(51, 35, 5);
+        font-size: 1.3rem;
+        margin: 0 10px;
+    }
 
 }
-*/
+
+
+
