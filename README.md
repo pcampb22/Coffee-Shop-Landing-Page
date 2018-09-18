@@ -1,1 +1,1 @@
-# Coffee-SHop-Landing-Page
+# Coffee-Shop-Landing-Page
