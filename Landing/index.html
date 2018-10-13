@@ -20,17 +20,17 @@
             </div>
             <div id="nav-container">
             <ul id="link">
-                <li class="nav-link">
-                 <a href="#header">Home</a>
+                <li>
+                 <a class="nav-link"href="#header">Home</a>
                 </li>
-                <li class="nav-link">
-                 <a href="#about">About</a>
+                <li >
+                 <a class="nav-link" href="#about">About</a>
                 </li>
-                <li class="nav-link">
-                 <a href="#pics">Pics</a>
+                <li>
+                 <a class="nav-link" href="#pics">Pics</a>
                 </li>
-                <li class="nav-link">
-                 <a href="#contact">Contact Us</a>
+                <li>
+                 <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
             </ul>
             
@@ -61,11 +61,13 @@
     <!-- Main -->
     <main>
         <!-- Live Coffee Section-->
-        <section id="live-Coffee-Section" class="section section-a">
+        <section id="live-Coffee-Section" class="section">
+            <div class="container section-a">
             <div id="liveCoffee-video-wrap">
-                <iframe src="https://www.youtube.com/embed/kUeQNiXk0pQ" 
+                <iframe id="video" src="https://www.youtube.com/embed/kUeQNiXk0pQ" 
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>    
+
             <div class="liveCoffee">
                     <p>Live Coffee Making Process</p>
                     <h1>We Telecast our Coffee Making Live.</h1>
@@ -73,29 +75,65 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, 
                        voluptatibus voluptate beatae natus animi odit fugiat? </p>
             </div>
+            </div>
         </section>
-        <!--
-        <section id="" class="section section-b">
+
+        <section id="about" class="section section-b">
             <div class="container">
+        
                 <h1>What kind of Coffee we serve for you</h1>
                 <h2>Who are extremely in love with ecofriendly system</h2>
+            <div class="menu-wrap">
+                <article>
+                <h3>Cappuccino</h3>
+               
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                    voluptatibus voluptate beatae natus animi odit fugiat? Eos quam
-                    officiis harum nostrum, ipsam eum similique possimus sit nobis
-                    necessitatibus eligendi. Harum sed error mollitia architecto nesciunt.
-                    Dolorum nobis odio voluptatibus! Nulla ab quidem iure placeat?
-                    Alias nesciunt doloribus similique totam libero.</p>
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                </article>
+                <article>
+                <h3>Americano</h3>
+               
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                 </article>
+                <article>
+                <h3>Espresso</h3>
+              
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                </article>
+                <article>
+                <h3>Macchiato</h3>
+              
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                </article>
+                <article>
+                <h3>Mocha</h3>
+            
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                </article>
+                <article>
+                <h3>Coffee Latte</h3>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                    voluptatibus voluptate beatae natus animi odit fugiat?</p>
+                 </article>
+            </div>
             </div>
         </section>
         <section id="pics" class="section section-d">
             <div class="container">
                 <h1>3 Images Here</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                    voluptatibus voluptate beatae natus animi odit fugiat? Eos quam
-                    officiis harum nostrum, ipsam eum similique possimus sit nobis
-                    necessitatibus eligendi. Harum sed error mollitia architecto nesciunt.
-                    Dolorum nobis odio voluptatibus! Nulla ab quidem iure placeat?
-                    Alias nesciunt doloribus similique totam libero.</p>
+                <div>
+                 <img src="./img/coffee1.jpeg" alt="coffee1_image" />
+                 <img src="./img/coffee2.jpeg" alt="coffee2_image" />
+                 <img src="./img/coffee3.jpeg" alt="coffee3_image" />
+                 <img src="./img/coffee4.jpeg" alt="coffee4_image" />
+                 <img src="./img/coffee5.jpeg" alt="coffee5_image" />
+                 <img src="./img/coffee6.jpeg" alt="coffee6_image" />
+                </div>
             </div>
         </section>
         <section id="contact" class="section section-d">
@@ -107,8 +145,20 @@
                     necessitatibus eligendi. Harum sed error mollitia architecto nesciunt.
                     Dolorum nobis odio voluptatibus! Nulla ab quidem iure placeat?
                     Alias nesciunt doloribus similique totam libero.</p>
+                
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name" required/>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="email@email.com" required/>
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="commentBox" cols="30" rows="10" required></textarea>
+
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                </form>
             </div>
-        </section> -->
+        </section> 
     </main>
     <footer>
 

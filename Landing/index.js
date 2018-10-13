@@ -1,10 +1,10 @@
 let toggleBtn = document.getElementById("toggle");
 let navContainer = document.getElementById("nav-container");
-let toggle = false;
-
+let toggle = true;
 
 toggleBtn.addEventListener('click', function(){
 //function to hide nav links
+   
     if(toggle === false)
     {
         navContainer.style.display = "none";
@@ -14,7 +14,9 @@ toggleBtn.addEventListener('click', function(){
         toggle = false;
     }
 
+
 });
+
 
 
 //hides nav bar on page load and displays as user scrolls
@@ -22,3 +24,4 @@ hideNavBar = () => {
     let navBar = document.getElementById("nav-bar");
 
 }
+

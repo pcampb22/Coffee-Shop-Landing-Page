@@ -32,7 +32,7 @@ button{
     font-size: 1.1rem;
     border: none;
     margin-top: 20px;
-    width: 50%;
+    width: 200px;
     padding: 10px 20px;
 }
 .overlay-content{
@@ -41,7 +41,7 @@ button{
 }
 .overlay-content h1{
     color: #fff;
-    font-size: 7.43rem;
+    font-size: 4.43rem;
     font-family: Dense, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 30px;
 }
@@ -109,10 +109,11 @@ ul{
     list-style-type: none;
     display: flex;
 }
-ul li a{
+nav ul li a{
     text-decoration: none;
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    display: block;
 }
 .nav-link{
     font-size: 0.9rem;}
@@ -145,18 +146,105 @@ ul li a{
 main{
     background-color: #fff;
     height: auto;
+    
 }
 
 section {
-    padding: 20px 10%;
+    padding: 130px 0;
 }
-.section-a{
+
+.section-a {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* === Live Coffee Section === */
+
+#live-Coffee-Section{
+    background: url("./img/country-quilt.png");
+}
+
+
+.section-a div{
+    width: 40%;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    border: 1px solid rgb(252, 190, 58);
+    padding: 20px;
+}
+
+#liveCoffee-video-wrap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+ 
+}
+
+#video{
+    width: 100%;
+    height: auto;
 }
 
 
 
 
+
+
+/* === About Section === */
+
+#about article{
+    width: 300px;
+    padding: 50px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.menu-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-wrap h3{
+    text-align: left;
+    color: rgb(252, 182, 31);
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-wrap h3::after{
+    content: "$4";
+    text-align: right;
+    color: rgb(39, 29, 6);
+}
+
+.section-b{
+    background: rgb(224, 224, 224);
+}
+
+
+
+
+/* === Pics Section === */
+#pics img{
+    width: 400px;
+    height: 300px;
+}
+
+#pics div div img{
+    margin: 0;
+}
+
+#pics{
+    background: url("./img/halftone-yellow.png");
+}
 
 
 
@@ -165,10 +253,11 @@ section {
 /* === Desktop === */
 @media (max-width: 960px)
 {
-    .container{
+    /*.container{
         padding-right: 3rem;
         padding-left: 3rem;
-    }
+    }*/
+
 }
 
 /* === Laptop, Desktop === */
@@ -176,6 +265,22 @@ section {
     #nav-container{
         display: flex !important;
     }
+
+     /* === Pics Section === */
+
+#pics div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#pics div{
+    width: 100%;
+    height: auto;
+}
+
+
 }
 
 /* == Tablets, cellphones etc == */
@@ -183,6 +288,11 @@ section {
     .overlay-content{
         text-align: center;
         margin: auto;
+        
+    }
+
+     .overlay-content h1{
+        font-size: 4.43em;
     }
 
     /* === Nav Styles === */
@@ -238,6 +348,25 @@ section {
         font-size: 1.3rem;
         margin: 0 10px;
     }
+
+
+/* === Live Coffee Section === */
+.section-a div{
+    width: 100%;
+}
+
+
+ /* === Pics Section === */
+#pics div img{
+    width: 100%;
+    height: auto;
+}
+#pics div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
 
 }
 
